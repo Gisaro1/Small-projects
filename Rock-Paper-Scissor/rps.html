@@ -11,28 +11,37 @@
  <!--Mode Selection-->
  <section class="mode-selection">
   <h2>Select Game Mode:</h2>
-  <label><input type="radio" name="mode" value="player-vs-player"> Player vs Player</label>
+  <label><input type="radio" name="mode" value="player-vs-player" checked> Player vs Player</label>
   <label><input type="radio" name="mode" value="player-vs-computer"> Player vs Computer</label>
 </section>
 
 <section class="player-one">
   <h2>Player 1 Choice:</h2>
-  <button>Rock</button>
-  <button>Paper</button>
-  <button>Scissor</button>
+  <div class="player-one-options">
+    <button class="choice-btn" data-choice="rock">Rock</button>
+    <button class="choice-btn" data-choice="paper">Paper</button>
+    <button class="choice-btn" data-choice="scissor">Scissor</button>
+  </div>
+  <p class="player-one-selection hidden">Selected: <span id="player-one-choice"></span></p>
 </section>
 
 <section class="player-two">
   <h2>Player 2 / Computer Choice:</h2>
-  <button>Rock</button>
-  <button>Paper</button>
-  <button>Scissor</button>
+  <div class="player-two-options">
+    <button class="choice-btn" data-choice="rock">Rock</button>
+    <button class="choice-btn" data-choice="paper">Paper</button>
+    <button class="choice-btn" data-choice="scissor">Scissor</button>
+  </div>
+  <p class="player-two-selection hidden">Selected: <span id="player-two-choice"></span></p>
 </section>
 
 <section class="game-result">
   <h2>Result:</h2>
-  <p>Player 1:</p>
-  <p>Player 2 / Computer:</p>
-  <p>Outcome:</p>
+  <p>Player 1: <span id="player-one-result"></span></p>
+  <p>Player 2 / Computer: <span id="player-two-result"></span></p>
+  <p>Outcome: <span id="outcome"></span></p>
 </section>
+<script src="rps.js"></script>
+</body>
+</html>
 <script>src="rps.js"</script>
