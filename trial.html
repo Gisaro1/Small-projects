@@ -6,50 +6,51 @@
     <title>Trial</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="m-0 p-0 bg-[#f0f0f0]">
+<body class="m-0 p-0 bg-[#f0f0f0] overflow-x-hidden">
 
-    <div class="relative mx-auto">
-        <div class="relative hidden lg:flex">   <!-- desktop version -->
-            <div class="h-[90vw]">               <!-- overall scroll distance of the group -->
+    <div class="relative mx-auto overflow-x-hidden">
+        <div class="relative hidden lg:flex">
+            <div class="lg:h-[90vw]">
 
                 <!-- Pink -->
-                <div class="absolute top-0 left-0 h-[90vw] w-full">
+                <div class="absolute lg:top-[9.6875rem] left-0 lg:h-[90vw] w-full">
                     <img src="Pink.png" 
-                         class="sticky h-[45vw] w-auto top-[-1.5vw] left-[35vw]"
-                         style="max-width: none;">
-                </div>
-                <!-- Yellow (pins first) -->
-                <div class="absolute top-0 left-0 h-[90vw] w-full">
-                    <img src="YellowLg.png" 
-                         class="sticky h-[68vw] w-auto top-0 left-0"
+                         class="sticky lg:h-[30vw] w-auto lg:top-[-1.5vw] lg:left-[35vw]"
                          style="max-width: none;">
                 </div>
 
-                <!-- Blue -->
-                <div class="absolute top-0 left-0 h-[100vw] w-full">
-                    <img src="Blue.png" 
-                         class="sticky h-[55vw] w-auto top-[-5vw] left-[36vw]"
+                <!-- greenSide -->
+                <div class="absolute lg:top-[20.8125rem] right-0 lg:h-[100vw] w-auto">
+                    <img src="greenSide.png" 
+                         class="sticky lg:h-[59vw] w-auto lg:top-[-6vw] right-0"
+                         style="max-width: none;">
+                </div>
+
+                <!-- Yellow -->
+                <div class="absolute lg:top-[17.1875rem] left-0 lg:h-[90vw] w-full">
+                    <img src="YellowLg.png" 
+                         class="sticky lg:h-[60.843rem] w-auto lg:top-0 left-0"
+                         style="max-width: none;">
+                </div>
+
+                <!-- Red -->
+                <div class="absolute lg:top-[52.0625rem] left-0 lg:h-[110vw] w-full">
+                    <img src="Red.png" 
+                         class="sticky lg:h-[30.5rem] w-auto lg:top-[-28vw] lg:left-[12vw]"
                          style="max-width: none;">
                 </div>
 
                 <!-- smallgreen -->
-                <div class="absolute top-0 left-0 h-[95vw] w-full">
+                <div class="absolute lg:top-[17.375rem] left-0 lg:h-[95vw] w-full">
                     <img src="smallgreen.png" 
-                         class="sticky h-[48vw] w-auto top-[-8vw] left-[20vw]"
+                         class="sticky lg:h-[38vw] w-auto lg:top-[-8vw] lg:left-[20vw]"
                          style="max-width: none;">
                 </div>
 
-                <!-- greenSide (right side) -->
-                <div class="absolute top-0 left-0 h-[100vw] w-full">
-                    <img src="greenSide.png" 
-                         class="sticky h-[70vw] w-auto top-[-6vw] right-0"
-                         style="max-width: none;">
-                </div>
-
-                <!-- Red (pins last) -->
-                <div class="absolute top-0 left-0 h-[110vw] w-full">
-                    <img src="Red.png" 
-                         class="sticky h-[40vw] w-auto top-[-28vw] left-[12vw]"
+                <!-- Blue -->
+                <div class="absolute lg:top-[15.4375rem] left-0 lg:h-[100vw] w-full">
+                    <img src="Blue.png" 
+                         class="sticky lg:h-[43vw] w-auto lg:top-[-5vw] lg:left-[36vw]"
                          style="max-width: none;">
                 </div>
 
@@ -57,7 +58,6 @@
         </div>
     </div>
 
-    <!-- Content that appears after the shapes leave -->
     <div class="px-20 py-40 max-w-4xl mx-auto text-3xl leading-relaxed">
         <p>We are a Berlin-based communications agency…</p>
     </div>
